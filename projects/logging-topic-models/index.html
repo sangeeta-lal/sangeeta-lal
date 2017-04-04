@@ -181,15 +181,37 @@ and iii) our topic-based metrics help explain the likelihood of a code snippet b
 Our findings highlight that topics contain valuable information that can help guide and drive developers’ logging decisions.
 </sub></p>
 
-<h2 id="data-and-scripts">Data and Scripts</h2>
-<p>We share our topic model output data (document-topics data, topic-keys data), strutucal metrics (e.g., LOC) for the methods in the studied systems, as well as the analysis scripts that we used in each research question.</p>
+<!--
+Data and Scripts
+---------------
+We share our topic model output data (document-topics data, topic-keys data), strutucal metrics (e.g., LOC) for the methods in the studied systems, as well as the analysis scripts that we used in each research question.
 
+* [Topic model output data](http://sailhome.cs.queensu.ca/replication/LoggingTopicModel/topic_model_output.tar.gz)
+* [Structural metrics data](http://hengli.org/assets/log-topic-model-data/structural_metrics.tar.gz)
+* [Data analysis scripts](http://hengli.org/assets/log-topic-model-data/analysis_scripts.tar.gz)
+-->
+
+<h2 id="data-and-scripts-for-replication">Data and Scripts for Replication</h2>
+<p>The replication of the work involves three major steps: topic modeling, structural metrics extraction, and data analysis (RQ1, RQ2, RQ3).</p>
 <ul>
-  <li><a href="http://sailhome.cs.queensu.ca/replication/LoggingTopicModel/topic_model_output.tar.gz">Topic model output data</a></li>
-  <li><a href="http://hengli.org/assets/log-topic-model-data/structural_metrics.tar.gz">Structural metrics data</a></li>
-  <li><a href="http://hengli.org/assets/log-topic-model-data/analysis_scripts.tar.gz">Data analysis scripts</a></li>
+  <li><strong>Topic Modeling</strong>
+    <ul>
+      <li>First, use <a href="https://github.com/doofuslarge/lscp">a lightweight source code preprocesser</a> to preprocess the source code of a subject system. Then, use the <a href="http://mallet.cs.umass.edu">MALLET toolkit</a> to run topic modeling on the preprocessed data. Among all the topic output data, the doc-topics file which shows topics’ distribution in each document and the topic-words file which shows words’ distribution in each topic are particularly used in our analysis. 
+Our script for running the MALLET tool can be downloaded <a href="http://hengli.org/assets/log-topic-model-data/run_mallet.sh">here</a>.
+Examples of our topic output data, incuding the output data for running topic modeling on the Hadoop system using 100 topics, as well as the output data for running topic modeling on the combined data of the six studied system using 100 topics, can be downloaded <a href="http://sailhome.cs.queensu.ca/replication/LoggingTopicModel/topic_model_output.tar.gz">here</a></li>
+    </ul>
+  </li>
+  <li><strong>Structural Metrics Extraction</strong>
+    <ul>
+      <li>The structural metrics of the six studied systems can be downloaded <a href="http://hengli.org/assets/log-topic-model-data/structural_metrics.tar.gz">here</a>.</li>
+    </ul>
+  </li>
+  <li><strong>Data Analysis</strong>
+    <ul>
+      <li>Our data analysis scripts for each research question can be downloaded <a href="http://hengli.org/assets/log-topic-model-data/analysis_scripts.tar.gz">here</a>. The analysis for each research question needs the topic model ouput data and the structural metrics data as input.</li>
+    </ul>
+  </li>
 </ul>
-
 
         
       </section>
