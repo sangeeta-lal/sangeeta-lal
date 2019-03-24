@@ -32,9 +32,6 @@
 <meta property="og:title" content="Studying Software Logging Using Topic Models">
 
 
-  <link rel="canonical" href="hengli.org/projects/logging-topic-models/">
-  <meta property="og:url" content="hengli.org/projects/logging-topic-models/">
-
 
 
   <meta property="og:description" content="We use automatically-computed topics of a code snippet to approximate the functionality of a code snippet. We study the relationship between the topics of a code snippet and the likelihood of a code snippet being logged.">
@@ -66,7 +63,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "Heng Li",
-      "url" : "hengli.org",
+      "url" : null,
       "sameAs" : null
     }
   </script>
@@ -79,7 +76,7 @@
 <!-- end SEO -->
 
 
-<link href="hengli.org/feed.xml" type="application/atom+xml" rel="alternate" title="Heng's Home Page Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Heng's Home Page Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -91,7 +88,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="hengli.org/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/main.css">
 
 <meta http-equiv="cleartype" content="on">
     <!-- start custom head snippets -->
@@ -114,16 +111,16 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="hengli.org/">Heng's Home Page</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="/">Heng's Home Page</a></li>
           
             
-            <li class="masthead__menu-item"><a href="hengli.org/">Home</a></li>
+            <li class="masthead__menu-item"><a href="/">Home</a></li>
           
             
-            <li class="masthead__menu-item"><a href="hengli.org/publications/">Publications</a></li>
+            <li class="masthead__menu-item"><a href="/publications/">Publications</a></li>
           
             
-            <li class="masthead__menu-item"><a href="hengli.org/about/">Biography</a></li>
+            <li class="masthead__menu-item"><a href="/about/">Biography</a></li>
           
         </ul>
         <ul class="hidden-links hidden"></ul>
@@ -184,8 +181,8 @@ Data and Scripts
 We share our topic model output data (document-topics data, topic-keys data), strutucal metrics (e.g., LOC) for the methods in the studied systems, as well as the analysis scripts that we used in each research question.
 
 * [Topic model output data](http://sailhome.cs.queensu.ca/replication/LoggingTopicModel/topic_model_output.tar.gz)
-* [Structural metrics data](hengli.org/assets/log-topic-model-data/structural_metrics.tar.gz)
-* [Data analysis scripts](hengli.org/assets/log-topic-model-data/analysis_scripts.tar.gz)
+* [Structural metrics data](/assets/log-topic-model-data/structural_metrics.tar.gz)
+* [Data analysis scripts](/assets/log-topic-model-data/analysis_scripts.tar.gz)
 -->
 
 <h2 id="data-and-scripts-for-replication">Data and Scripts for Replication</h2>
@@ -194,18 +191,18 @@ We share our topic model output data (document-topics data, topic-keys data), st
   <li><strong>Topic Modeling</strong>
     <ul>
       <li>First, use <a href="https://github.com/doofuslarge/lscp">a lightweight source code preprocesser</a> to preprocess the source code of a subject system. Then, use the <a href="http://mallet.cs.umass.edu">MALLET toolkit</a> to run topic modeling on the preprocessed data. Among all the topic output data, the doc-topics file which shows topics’ distribution in each document and the topic-words file which shows words’ distribution in each topic are particularly used in our analysis. 
-Our script for running the MALLET tool can be downloaded <a href="hengli.org/assets/log-topic-model-data/run_mallet.sh">here</a>.
+Our script for running the MALLET tool can be downloaded <a href="/assets/log-topic-model-data/run_mallet.sh">here</a>.
 Examples of our topic output data, incuding the output data for running topic modeling on the Hadoop system using 100 topics, as well as the output data for running topic modeling on the combined data of the six studied system using 100 topics, can be downloaded <a href="http://sailhome.cs.queensu.ca/replication/LoggingTopicModel/topic_model_output.tar.gz">here</a></li>
     </ul>
   </li>
   <li><strong>Structural Metrics Extraction</strong>
     <ul>
-      <li>The structural metrics of the six studied systems can be downloaded <a href="hengli.org/assets/log-topic-model-data/structural_metrics.tar.gz">here</a>.</li>
+      <li>The structural metrics of the six studied systems can be downloaded <a href="/assets/log-topic-model-data/structural_metrics.tar.gz">here</a>.</li>
     </ul>
   </li>
   <li><strong>Data Analysis</strong>
     <ul>
-      <li>Our data analysis scripts for each research question can be downloaded <a href="hengli.org/assets/log-topic-model-data/analysis_scripts.tar.gz">here</a>. The analysis for each research question needs the topic model ouput data and the structural metrics data as input.</li>
+      <li>Our data analysis scripts for each research question can be downloaded <a href="/assets/log-topic-model-data/analysis_scripts.tar.gz">here</a>. The analysis for each research question needs the topic model ouput data and the structural metrics data as input.</li>
     </ul>
   </li>
 </ul>
@@ -257,7 +254,7 @@ Examples of our topic output data, incuding the output data for running topic mo
       <li><a href="http://github.com/henglicad"><i class="fa fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="hengli.org/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/feed.xml"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -265,7 +262,7 @@ Examples of our topic output data, incuding the output data for running topic mo
       </footer>
     </div>
 
-    <script src="hengli.org/assets/js/main.min.js"></script>
+    <script src="/assets/js/main.min.js"></script>
 
 
 
